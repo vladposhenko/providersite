@@ -1,0 +1,37 @@
+$white:#ffffff;
+$red: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+$gray:#B3B3BA;
+$blue:#24A3FF;
+$black:#000000;
+$pink:#F0145A;
+$darkWhite:#F5F5FA;
+
+$sectionPadding:30px 0;
+$mainMargin: 30px;
+
+%title-font {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+%anim1 {
+    transition: all ease .5s;
+}
+
+%default-linear {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+}

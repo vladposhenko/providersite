@@ -1,0 +1,135 @@
+.white-header {
+    padding-bottom: 60px;
+    color: $gray;
+
+    & .header__info-btn {
+        color: $gray;
+        &:hover {
+            color: $white;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+
+    
+    & .menu__link {
+        color: $blue;
+        &:hover::after {
+            background: $blue;
+        }
+    }
+
+    & .menu__item::marker {
+        font-size: 0;
+    }
+
+    & .header__info-btn:hover {
+        background: #F5F5FA;
+        border-radius: 8px;
+        color: #B3B3BA; 
+    }
+
+    & .header__info-btn:focus,
+    & .header__info-btn:active {
+        color: $white;
+        background: $pink;
+    }
+
+    & .header__info-social svg path {
+        fill: $gray;   
+    }
+    & .header__info-social svg:hover path {
+        fill: $pink;
+    }
+}
+
+
+
+.menu__link.active-page {
+    color: $pink;
+    position: relative;
+    &::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: $pink;
+        bottom: -3px;
+        left: 0;
+    }
+    &:hover::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background: $pink;
+        bottom: -3px;
+        left: 0;
+    }
+}
+
+
+.public {
+    & .publications__inner {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        & .publications__item {
+            width: 100%;
+        }
+    }
+
+    .publications__item-title {
+        @extend %anim1;
+    }
+
+    & .publications__item {
+        @extend %anim1;
+        &:hover {
+            transform: scale(1.009);
+        }
+        &:hover .publications__item-title {
+            color: $pink;}
+    }
+    
+    
+}
+
+// SWITCH BUTTON 
+
+
+
+.public__buttons {
+    width: 226px;
+    margin: 0 auto;
+    background: #E6E6F0;
+    border-radius: 12px;
+    padding: 2px;
+}
+
+.public__btn {
+    color: #323264;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 30px;
+}
+
+.public-active {
+    background-color: #fff;
+    
+    border-radius: 10px;
+}
+
+.public-inactive {
+    @extend %anim1;
+    &:hover {
+        background: #F5F5FA;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+

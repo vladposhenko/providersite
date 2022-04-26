@@ -1,0 +1,109 @@
+
+// <ОБЩИЕ СТИЛИ>----------------------------------------------------------------------------------------------------------//
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+    min-width: 320px;
+	
+}
+
+
+.top__wrap {
+    background-image: url('../images/bg-wrapper.png'), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+button {
+    background:transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: $red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.section__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $blue;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 14px;
+    span {
+        @extend %anim1;
+    }
+    svg {
+        position: absolute;
+        top: 2px;
+        right: 0px;
+        @extend %anim1;
+        
+    }
+    svg path {
+        @extend %anim1;
+    }
+
+    &:hover {
+        color: $pink;
+    }
+    &:hover svg {
+        transform: rotate(180deg);
+    }
+
+    &:hover svg path {
+        stroke: $pink;
+    }
+}
