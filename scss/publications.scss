@@ -15,7 +15,7 @@
     
     & .menu__link {
         color: $blue;
-        &:hover::after {
+        &::after {
             background: $blue;
         }
     }
@@ -132,4 +132,31 @@
 
 
 
+.publications__btn {
+    margin: 0 auto;
+    display: block;
+    width: 211px;
+    height: 56px;
+    color: $white;
+    background: $blue;
+    margin-top: $mainMargin;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    @extend %anim1;
+    &:hover {
+         background: #0085FF;
+    }
+    &:active {
+        background: #006CCF;
+    }
+}
 
+
+.public-item {
+    max-width: 100%;
+}

@@ -32,6 +32,10 @@
             width: 100%;
         }
     }
+
+    .review__img {
+        width: 63%;
+    }
 }
 
 
@@ -40,12 +44,6 @@
 // <СТИЛИ ДЛЯ ЭКРАНОВ меньше 1024px(TABLET HD)>-----------------------------------------------------------------------------------//
 
 
-
-@media  (min-width: 1000px) and (max-width: 1250px)  {
-    .service__item {
-        max-width: 302px;
-    }
-}
 
 
 @media (max-width:988px) {
@@ -164,17 +162,14 @@
             border-radius: 5px 10px 0 0;
         }
     }
+
+    .service__item {
+        flex-basis: 40%;
+    }
 }
 
 
 // <СТИЛИ ДЛЯ ЭКРАНОВ меньше 768px(TABLET SD)>-----------------------------------------------------------------------------------//
-
-@media  (min-width: 657px) and (max-width: 870px)  {
-    .service__item {
-        max-width: 282px;
-    }
-}
-
 
 @media (max-width:768px) {
     .container {
@@ -182,7 +177,7 @@
     }
     .header {
         padding-top: 40px;
-        padding-bottom: 70px;
+        padding-bottom: 140px;
         &__wrapper {
             flex-direction: column;
         }
@@ -210,19 +205,27 @@
 
     .publications__inner {
         flex-wrap: wrap;
-        justify-content: center;
+        
     }
 
+    
     .publications__item {
-        width: 309px;
-
+        max-width: 46%;
+        width: 100%;
         &:last-child {
-            width: 100%;
+            max-width: 100%;
         }
     }
     .top {
-        padding-top: 246px;
+        padding-top: 55px;
     }
+
+    .public .publications__item {
+        max-width: 100%;
+    }
+
+    
+
 
 }
 
@@ -307,6 +310,10 @@
         }
     }
 
+    .publications__item {
+        max-width: 100%;
+    }
+
     // MOBILE MENU 
 
 
@@ -373,7 +380,7 @@
     .top {
         padding-top: 138px;
         &__anchor {
-            bottom: 60px;
+            bottom: 139px;
         }
     }
 
@@ -448,6 +455,10 @@
         }
     }
 
+    .white-page .menu {
+        background: #E6E6F0;
+    }
+
 
     // БЕЛЫЙ HEADER
 
@@ -485,6 +496,10 @@
         grid-template-columns: 1fr;
     }
 
+    .service__item {
+        flex-basis: 100%;
+    }
+
 }
 
 
@@ -495,7 +510,7 @@
     .partners {
         &__inner {
             grid-template-columns: 1fr;
-            max-height: 720px;
+            max-height: 719px;
             overflow-y: scroll;
         }
 
@@ -525,4 +540,8 @@
 }
 
 
+
+.white-page .popup{
+    background: #E6E6F0;
+}
 

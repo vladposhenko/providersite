@@ -5,11 +5,6 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Montserrat";
   src: url(../fonts/Montserrat-SemiBold.ttf);
   font-weight: 600;
 }
@@ -29,7 +24,7 @@
   justify-content: space-between;
 }
 
-.team__link svg path, .team__link svg, .team__link, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__map, .menu__link:hover, .menu__link::after, .menu__link, .logo, .header__info-social svg path, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
+.team__link svg path, .team__link svg, .team__link, .publications__btn, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
   transition: all ease 0.5s;
 }
 
@@ -214,15 +209,16 @@ a {
   content: "";
   display: block;
   width: 0%;
+  height: 2px;
+  transition: width 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+  bottom: -3px;
+  left: 0;
+  background: #fff;
+  position: absolute;
 }
 .menu__link:hover::after {
   content: "";
   width: 100%;
-  height: 2px;
-  position: absolute;
-  background: #fff;
-  bottom: -3px;
-  left: 0;
 }
 
 .footer {
@@ -429,6 +425,7 @@ a {
   max-width: 400px;
   display: flex;
   flex-direction: column;
+  flex-basis: 30%;
 }
 .service__item-img {
   width: 92px;
@@ -530,6 +527,12 @@ a {
 .swiper-pagination {
   width: 50px;
   height: 50px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background: #24A3FF;
+}
+.swiper-pagination .swiper-pagination-bullet:hover {
+  background: rgba(36, 164, 255, 0.4941176471);
 }
 
 .partners {
@@ -647,7 +650,7 @@ a {
   display: block;
 }
 .publications__item:hover {
-  transform: scale(1.005);
+  transform: scale(2);
 }
 .publications__item:hover .publications__item-title {
   color: #F0145A;
@@ -694,6 +697,7 @@ a {
   left: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 999;
 }
 .popup__area {
   position: absolute;
@@ -701,14 +705,6 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-}
-.popup:target {
-  opacity: 1;
-  visibility: visible;
-}
-.popup:target .popup__content {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 .popup input {
   border: none;
@@ -737,8 +733,6 @@ a {
   box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
   border-radius: 12px;
   position: relative;
-  opacity: 0;
-  transform: translate(0px, -100%);
 }
 .popup__close {
   position: absolute;
@@ -803,7 +797,7 @@ a {
   padding: 18px 0;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
 }
 .popup__btn:hover {
@@ -811,6 +805,10 @@ a {
 }
 .popup__btn:active {
   background: #006CCF;
+}
+.popup.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .white-header {
@@ -829,7 +827,7 @@ a {
 .white-header .menu__link {
   color: #24A3FF;
 }
-.white-header .menu__link:hover::after {
+.white-header .menu__link::after {
   background: #24A3FF;
 }
 .white-header .menu__item::marker {
@@ -914,6 +912,33 @@ a {
   border-radius: 10px;
 }
 
+.publications__btn {
+  margin: 0 auto;
+  display: block;
+  width: 211px;
+  height: 56px;
+  color: #ffffff;
+  background: #24A3FF;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.publications__btn:hover {
+  background: #0085FF;
+}
+.publications__btn:active {
+  background: #006CCF;
+}
+
+.public-item {
+  max-width: 100%;
+}
+
 .team__title {
   margin-left: 98px;
 }
@@ -996,10 +1021,9 @@ a {
   .publications__item-img {
     width: 100%;
   }
-}
-@media (min-width: 1000px) and (max-width: 1250px) {
-  .service__item {
-    max-width: 302px;
+
+  .review__img {
+    width: 63%;
   }
 }
 @media (max-width: 988px) {
@@ -1100,10 +1124,9 @@ a {
   .review__slide img {
     border-radius: 5px 10px 0 0;
   }
-}
-@media (min-width: 657px) and (max-width: 870px) {
+
   .service__item {
-    max-width: 282px;
+    flex-basis: 40%;
   }
 }
 @media (max-width: 768px) {
@@ -1113,7 +1136,7 @@ a {
 
   .header {
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 140px;
   }
   .header__wrapper {
     flex-direction: column;
@@ -1139,18 +1162,22 @@ a {
 
   .publications__inner {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .publications__item {
-    width: 309px;
+    max-width: 46%;
+    width: 100%;
   }
   .publications__item:last-child {
-    width: 100%;
+    max-width: 100%;
   }
 
   .top {
-    padding-top: 246px;
+    padding-top: 55px;
+  }
+
+  .public .publications__item {
+    max-width: 100%;
   }
 }
 @media (max-width: 704px) {
@@ -1217,6 +1244,10 @@ a {
     margin-right: -37px;
   }
 
+  .publications__item {
+    max-width: 100%;
+  }
+
   .menu {
     align-self: flex-end;
   }
@@ -1273,7 +1304,7 @@ a {
     padding-top: 138px;
   }
   .top__anchor {
-    bottom: 60px;
+    bottom: 139px;
   }
 
   .review__title {
@@ -1345,6 +1376,10 @@ a {
     border-radius: 8px;
   }
 
+  .white-page .menu {
+    background: #E6E6F0;
+  }
+
   .white-header {
     padding-top: 0;
     padding-bottom: 30px;
@@ -1368,11 +1403,15 @@ a {
   .public-page .publications__inner {
     grid-template-columns: 1fr;
   }
+
+  .service__item {
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 469px) {
   .partners__inner {
     grid-template-columns: 1fr;
-    max-height: 720px;
+    max-height: 719px;
     overflow-y: scroll;
   }
   .partners__item {
@@ -1391,6 +1430,9 @@ a {
   .footer__copy {
     text-align: center;
   }
+}
+.white-page .popup {
+  background: #E6E6F0;
 }
 
 /*# sourceMappingURL=style.css.map */

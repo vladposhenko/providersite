@@ -44,12 +44,12 @@
             @extend %anim1;
         }
         &:hover {
-            border:  2px solid #F0145A;
+            border:  2px solid $pink;
             animation-play-state: paused;
         }
 
         &:hover svg path {
-            stroke: #F0145A;
+            stroke: $pink;
         }
     }
 }
@@ -168,6 +168,7 @@
         max-width: 400px;
         display: flex;
         flex-direction: column;
+        flex-basis: 30%;
     }
 
     &__item-img {
@@ -292,6 +293,13 @@
 .swiper-pagination {
     width: 50px;
     height: 50px;
+    .swiper-pagination-bullet {
+        background: #24A3FF;
+        @extend %anim1;
+        &:hover {
+            background:#24a4ff7e ;
+        }
+    }
 }
 
 // <CТИЛИ СЕКЦИИ PARTNERS>-----------------------------------------------------------------------------------//
@@ -431,17 +439,12 @@
         display: block;
         @extend %anim1;
         &:hover {
-            transform: scale(1.005);
+            transform: scale(2);
         }
-
-        
 
         &:hover .publications__item-title {
             color: $pink;
-        }
-
-
-        
+        }   
     }
 
     &__item-img {
@@ -497,6 +500,7 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
+    z-index: 999;
     @extend %anim1;
     // .popup__area 
     &__area {
@@ -508,16 +512,16 @@
     }
     // .popup__target
 
-    &:target {
-        opacity: 1;
-        visibility: visible;
-    }
-    // .popup:target .popup__content 
+    // &:target {
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+    // // .popup:target .popup__content 
 
-    &:target .popup__content {
-        transform: translate(0,0);
-        opacity: 1;
-    }
+    // &:target .popup__content {
+    //     transform: translate(0,0);
+    //     opacity: 1;
+    // }
     // .popup input
 
     & input {
@@ -533,7 +537,7 @@
             line-height: 26px;
         }
         &:focus {
-            border: 1px solid #24A3FF;
+            border: 1px solid $blue;
         }
     }
       // .popup__body
@@ -553,8 +557,6 @@
         border-radius: 12px;
         position: relative;
         @extend %anim1;
-        opacity: 0;
-        transform: translate(0px, -100%);
     }
       // .popup__close
 
@@ -600,7 +602,7 @@
         margin-bottom: $mainMargin;
         border-radius: 8px;
         &:focus {
-            border: 1px solid #24A3FF;
+            border: 1px solid $blue;
         }
         &::placeholder {
             color: $gray;
@@ -639,7 +641,7 @@
         padding: 18px 0;
         font-size: 16px;
         line-height: 20px;
-        color: #fff;
+        color: $white;
         font-weight: 700;
         @extend %anim1;
         &:hover {
@@ -649,6 +651,10 @@
             background: #006CCF;
         }
         
+    }
+    &.show {
+        opacity: 1;
+        visibility: visible;
     }
 }
 

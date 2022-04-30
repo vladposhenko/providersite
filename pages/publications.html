@@ -10,7 +10,7 @@
     <title>Publications</title>
 </head>
 <body>
-    <div class="wrapper public-page">
+    <div class="wrapper public-page white-page">
         <header class="header white-header" id="header">
             <div class="container">
                 <div class="header__wrapper">
@@ -60,7 +60,7 @@
                                     <a class="menu__link" href="#">about us</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#popup">services</a>
+                                    <a class="menu__link" href="#">services</a>
                                 </li>
                                 <li class="menu__item">
                                     <a class="menu__link" href="team.html">team</a>
@@ -68,7 +68,7 @@
                                 <li class="menu__item">
                                     <a class="menu__link active-page" href="pages/publications.html">publications</a>
                                 </li>
-                                <li class="menu__item">
+                                <li class="menu__item" id="openModal">
                                     <a class="menu__link" href="#">contact</a>
                                 </li>
                             </ul>
@@ -139,6 +139,7 @@
                             </div>
                         </a>
                     </div>
+                    <button class="publications__btn">More publications</button>
                 </div>
             </section>
         </main>
@@ -148,7 +149,7 @@
                 <div class="footer__inner">
                     <div class="footer__info" >
                         <div class="footer__street">
-                            <span class="footer__adress">Kyiv, Mechnikova str, 14/1</span>
+                            <a class="footer__adress" href="#">Kyiv, Mechnikova str, 14/1</a>
                             <span class="circle"></span>
                             <a class="footer__map" href="#">On map</a>
                         </div>
@@ -169,10 +170,9 @@
             </div>
         </footer>
         <div class="popup" id="popup">
-            <a class="popup__area" href="#header"></a>
             <div class="popup__body">
                 <div class="popup__content">
-                    <a href="#header" class="popup__close">
+                    <a href="#header" class="popup__close" id="closeModal">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
                             <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
@@ -190,10 +190,9 @@
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="../js/main.js"></script>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

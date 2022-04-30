@@ -28,7 +28,7 @@
                                     <button class="header__info-btn">EN</button>
                                 </div>
                                 <span class="circle"></span>
-                                 <a class="header__info-place" href="#">
+                                 <a class="header__info-place" target="_blank" href="https://www.google.com/maps/place/Mechnykova+St,+Kyiv,+02000/@50.4371321,30.5301025,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00c1477f95:0xf993c521600381cd!8m2!3d50.4371287!4d30.5322912">
                                     Kyiv, Mechnikova str, 14/1
                                  </a>
                                  <span class="circle"></span>
@@ -62,7 +62,7 @@
                                         <a class="menu__link" href="#">about us</a>
                                     </li>
                                     <li class="menu__item">
-                                        <a class="menu__link" href="#popup">services</a>
+                                        <a class="menu__link" href="#">services</a>
                                     </li>
                                     <li class="menu__item">
                                         <a class="menu__link" href="pages/team.html">team</a>
@@ -70,8 +70,8 @@
                                     <li class="menu__item">
                                         <a class="menu__link" href="pages/publications.html">publications</a>
                                     </li>
-                                    <li class="menu__item">
-                                        <a class="menu__link" href="#">contact</a>
+                                    <li class="menu__item" id="openModal">
+                                        <a class="menu__link" href="#" >contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -125,7 +125,7 @@
                                 <h4 class="service__item-title">IT and e-commerce</h4>
                                 <p class="service__item-text">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
                             </div>
-                            <div class="service__item" >
+                            <div class="service__item" data-aos="fade-up">
                                 <img class="service__item-img" src="images/service2.svg" alt="shop">
                                 <h4 class="service__item-title">Comprehensive daily legal support</h4>
                                 <p class="service__item-text">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
@@ -140,7 +140,7 @@
                                 <h4 class="service__item-title">Building contractual relations</h4>
                                 <p class="service__item-text">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
                             </div>
-                            <div class="service__item">
+                            <div class="service__item" data-aos="fade-up">
                                 <img class="service__item-img" src="images/service5.svg" alt="shop">
                                 <h4 class="service__item-title">Protection of business, intellectual property</h4>
                                 <p class="service__item-text">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
@@ -294,7 +294,7 @@
                     <div class="footer__inner">
                         <div class="footer__info" >
                             <div class="footer__street">
-                                <span class="footer__adress">Kyiv, Mechnikova str, 14/1</span>
+                                <a class="footer__adress" href="#">Kyiv, Mechnikova str, 14/1</a>
                                 <span class="circle"></span>
                                 <a class="footer__map" href="#">On map</a>
                             </div>
@@ -317,10 +317,9 @@
         </main>
 
         <div class="popup" id="popup">
-            <a class="popup__area" href="#header"></a>
             <div class="popup__body">
                 <div class="popup__content">
-                    <a href="#header" class="popup__close">
+                    <a href="#header" class="popup__close" id="closeModal">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
                             <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
