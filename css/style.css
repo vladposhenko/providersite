@@ -24,7 +24,7 @@
   justify-content: space-between;
 }
 
-.team__link svg path, .team__link svg, .team__link, .publications__btn, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
+.team__link svg path, .team__link svg, .team__link, .team__item-name, .publications__btn, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__phone, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-phone, .header__info-place, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
   transition: all ease 0.5s;
 }
 
@@ -159,10 +159,16 @@ a {
   font-size: 16px;
   line-height: 20px;
 }
+.header__info-place:hover {
+  color: #F0145A;
+}
 .header__info-phone {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+.header__info-phone:hover {
+  color: #F0145A;
 }
 .header__info-social:hover svg path {
   fill: #F0145A;
@@ -264,6 +270,9 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+.footer__phone:hover {
+  color: #F0145A;
 }
 .footer__mail {
   color: #24A3FF;
@@ -941,6 +950,10 @@ a {
 
 .team__title {
   margin-left: 98px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .team__inner {
   display: grid;
@@ -955,6 +968,9 @@ a {
 }
 .team__item:hover .team__link svg {
   transform: rotate(180deg);
+}
+.team__item:hover .team__item-name {
+  color: #F0145A;
 }
 .team__item img {
   max-width: 400px;
@@ -1070,6 +1086,11 @@ a {
 
   .team__title {
     margin-left: 0;
+  }
+
+  .circle {
+    width: 7px;
+    height: 7px;
   }
 }
 @media (max-width: 918px) {
@@ -1217,7 +1238,7 @@ a {
     line-height: 26px;
   }
 }
-@media (max-width: 562px) {
+@media (max-width: 564px) {
   .header {
     padding-top: 0;
   }

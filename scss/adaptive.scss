@@ -95,6 +95,11 @@
         margin-left: 0;
     }
 
+    .circle {
+        width: 7px;
+        height: 7px;
+    }
+
 }
 
 
@@ -144,6 +149,8 @@
     .idea__list::after {
         display: none;
     }
+
+    
 
     
     
@@ -281,7 +288,7 @@
 
 
 
-@media (max-width:562px) {
+@media (max-width:564px) {
     // ГЛАВНЫЙ HEADER
     .header {
         padding-top: 0;

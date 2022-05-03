@@ -43,12 +43,20 @@
     &__info-place {
         font-size: 16px;
         line-height: 20px;
+        @extend %anim1;
+        &:hover {
+            color:$pink;
+        }
     }
 
     &__info-phone {
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
+        @extend %anim1;
+        &:hover {
+            color:$pink;
+        }
     }
 
     &__info-social{
@@ -177,6 +185,10 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
+        @extend %anim1;
+        &:hover {
+            color:$pink;
+        }
     }
 
     &__mail {
