@@ -68,7 +68,7 @@
                                 <li class="menu__item">
                                     <a class="menu__link" href="publications.html">publications</a>
                                 </li>
-                                <li class="menu__item">
+                                <li class="menu__item" id="openModal">
                                     <a class="menu__link" href="#">contact</a>
                                 </li>
                             </ul>
@@ -172,28 +172,31 @@
                 </div>
             </div>
         </footer>
-        <div class="popup" id="popup">
-            <a class="popup__area" href="#header"></a>
-            <div class="popup__body">
-                <div class="popup__content">
-                    <a href="#header" class="popup__close">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
-                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
-                        </svg>                            
-                    </a>
-                    <h2 class="popup__title title">We would like to help you</h2>
-                    <form class="popup__form">
-                        <input class="popup__name" placeholder="Name" type="text">
-                        <textarea class="popup__textarea" placeholder="Message"></textarea>
-                        <h4 class="popup__form-title">How to answer you?</h4>
-                        <input class="popup__phone" placeholder="Phone number" type="text">
-                        <input class="popup__mail" placeholder="Email" type="text">
-                        <button class="popup__btn">Send message</button>
-                    </form>
+         <!-- <POPUP START>----------------------------------------------------------------------------------- -->
+
+            <div class="popup" id="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <a href="#header" class="popup__close" id="closeModal">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                            </svg>                            
+                        </a>
+                        <h2 class="popup__title title">We would like to help you</h2>
+                        <form class="popup__form">
+                            <input class="popup__name" placeholder="Name" type="text">
+                            <textarea class="popup__textarea" placeholder="Message"></textarea>
+                            <h4 class="popup__form-title">How to answer you?</h4>
+                            <input class="popup__phone" placeholder="Phone number" type="text">
+                            <input class="popup__mail" placeholder="Email" type="text">
+                            <button class="popup__btn">Send message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+    
+            <!-- <POPUP END>----------------------------------------------------------------------------------- -->
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
