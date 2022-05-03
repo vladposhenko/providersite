@@ -435,6 +435,10 @@ a {
   display: flex;
   flex-direction: column;
   flex-basis: 30%;
+  cursor: pointer;
+}
+.service__item:hover .service__item-title {
+  color: #F0145A;
 }
 .service__item-img {
   width: 92px;
@@ -447,9 +451,6 @@ a {
   font-size: 22px;
   line-height: 27px;
   cursor: pointer;
-}
-.service__item-title:hover {
-  color: #F0145A;
 }
 .service__item-text {
   margin-top: 15px;
