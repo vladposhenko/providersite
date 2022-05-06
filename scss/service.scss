@@ -1,0 +1,106 @@
+.no-bg {
+    background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.info-service {
+    padding-top: 65px;
+    text-align: center;
+    color: $white;
+    &__top {
+        padding-bottom: 60px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__img {
+        margin-bottom: 28px;
+    }
+    &__title {
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 28px;
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        & + .info-service__text {
+            margin-top: 20px;
+        }
+    }
+
+    &__btn {
+        margin-top: 28px;
+        background: #24A3FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        width: 208px;
+        height: 56px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        @extend %anim1;
+        &:hover {
+            background: #0085FF;
+        }
+        &:focus {
+            background: #006CCF;
+        }
+    }
+
+    &__bottom {
+        padding-top: 30px;
+        text-align: left;
+    }
+
+    &__bottom-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__list {
+        flex-basis: 45%;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 26px;
+        & + .info-service__item {
+            margin-top: 15px;
+        }
+        padding-left: 15px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            background: $pink;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            top: 30%;
+        }
+    }
+}
+
+
+.publications-service {
+    margin-top: 80px;
+}

@@ -24,7 +24,7 @@
   justify-content: space-between;
 }
 
-.team__link svg path, .team__link svg, .team__link, .team__item-name, .publications__btn, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__phone, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-phone, .header__info-place, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
+.info-service__btn, .team__link svg path, .team__link svg, .team__link, .team__item-name, .publications__btn, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__phone, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-phone, .header__info-place, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
   transition: all ease 0.5s;
 }
 
@@ -659,9 +659,6 @@ a {
   background: #ffffff;
   display: block;
 }
-.publications__item:hover {
-  transform: scale(2);
-}
 .publications__item:hover .publications__item-title {
   color: #F0145A;
 }
@@ -1015,6 +1012,104 @@ a {
   stroke: #F0145A;
 }
 
+.no-bg {
+  background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.info-service {
+  padding-top: 65px;
+  text-align: center;
+  color: #ffffff;
+}
+.info-service__top {
+  padding-bottom: 60px;
+  position: relative;
+}
+.info-service__top::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  bottom: 0;
+  left: 0;
+}
+.info-service__img {
+  margin-bottom: 28px;
+}
+.info-service__title {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 28px;
+}
+.info-service__text {
+  font-size: 19px;
+  line-height: 30px;
+}
+.info-service__text + .info-service__text {
+  margin-top: 20px;
+}
+.info-service__btn {
+  margin-top: 28px;
+  background: #24A3FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  width: 208px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+.info-service__btn:hover {
+  background: #0085FF;
+}
+.info-service__btn:focus {
+  background: #006CCF;
+}
+.info-service__bottom {
+  padding-top: 30px;
+  text-align: left;
+}
+.info-service__bottom-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+.info-service__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.info-service__list {
+  flex-basis: 45%;
+}
+.info-service__item {
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 15px;
+  position: relative;
+}
+.info-service__item + .info-service__item {
+  margin-top: 15px;
+}
+.info-service__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #F0145A;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  top: 30%;
+}
+
+.publications-service {
+  margin-top: 80px;
+}
+
 @media (min-width: 1720px) {
   .container {
     max-width: 1600px;
@@ -1092,6 +1187,10 @@ a {
   .circle {
     width: 7px;
     height: 7px;
+  }
+
+  .service-page .logo-img {
+    width: 190px;
   }
 }
 @media (max-width: 918px) {
@@ -1428,6 +1527,18 @@ a {
 
   .service__item {
     flex-basis: 100%;
+  }
+
+  .info-service__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .info-service__list {
+    flex-basis: 100%;
+  }
+
+  .service-page .logo-img {
+    width: 140px;
   }
 }
 @media (max-width: 469px) {

@@ -100,6 +100,10 @@
         height: 7px;
     }
 
+    .service-page .logo-img {
+        width: 190px;
+    }
+
 }
 
 
@@ -505,6 +509,18 @@
 
     .service__item {
         flex-basis: 100%;
+    }
+
+    .info-service__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .info-service__list {
+        flex-basis: 100%;
+    }
+    
+    .service-page .logo-img {
+        width: 140px;
     }
 
 }
