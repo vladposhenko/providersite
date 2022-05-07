@@ -17,15 +17,17 @@ new Swiper('.review__slider', {
 
 
 const menuBtn = document.querySelector('.menu__btn');
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.mobile-nav');
 const closeBtn = document.querySelector('.close__menu');
+
+console.log(closeBtn);
 
 menuBtn.addEventListener('click', function(){
     menu.classList.toggle('active');
 })
 
 closeBtn.addEventListener('click', function(){
-    menu.classList.toggle('active');
+    menu.classList.remove('active');
   })
 
 // <ОТКРЫТИЕ И ЗАКРЫТИЕ POPUP>-----------------------------------------------------------------------------------//
@@ -42,3 +44,6 @@ openModal.addEventListener('click', function(){
 closeModal.addEventListener('click', function(){
     modal.classList.toggle('show');
   })
+
+
+

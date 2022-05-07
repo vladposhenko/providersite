@@ -52,7 +52,7 @@
     }
     .white-header {
         padding-top: 40px;
-        padding-bottom: 130px;
+        padding-bottom: 67px;
         & .logo {
             span {
                 display: none;
@@ -63,7 +63,6 @@
         }
 
         & .header__inner {
-            margin-top: $mainMargin - 10px;
             order: -1;
             position: relative;
         }
@@ -71,12 +70,24 @@
         & .header__info-place {
             color: $gray;
         }
+
+        & .header__inner .menu {
+            display: none;
+        }
+    }
+
+    .white-header .mobile-menu {
+        display: block;
+        margin-top: 20px;
+        & .menu__btn {
+            top: -50px;
+        }
     }
 
     .white-header .menu {
         align-self: flex-start;
-        position: absolute;
-        bottom: -157px;
+        margin-top: 0;
+        
     }
 
     .white-header .logo {
@@ -188,13 +199,13 @@
     }
     .header {
         padding-top: 40px;
-        padding-bottom: 140px;
+        padding-bottom: 50px;
         &__wrapper {
             flex-direction: column;
         }
 
         &__inner {
-            margin-top: $mainMargin - 10px;
+            // margin-top: $mainMargin - 10px;
             order: -1;
             position: relative;
         }
@@ -204,10 +215,19 @@
         }
     }
 
-    .menu {
-        align-self: flex-start;
-        position: absolute;
-        bottom: -157px;
+    .header__inner .menu {
+        display: none;
+    }
+
+    // .menu {
+    //     align-self: flex-start;
+    //     position: absolute;
+    //     bottom: -157px;
+    // }
+
+    .mobile-menu {
+        display: block;
+        margin-top: 41px;
     }
 
     .logo {
@@ -235,7 +255,9 @@
         max-width: 100%;
     }
 
-    
+    .menu {
+        margin-top: 0;
+    }
 
 
 }
@@ -328,20 +350,25 @@
     // MOBILE MENU 
 
 
-    .menu {
+    .mobile-menu {
+        margin-top: 0;
+    }
+
+    .mobile-menu .menu {
         align-self: flex-end;
 
         &__list {
             flex-direction: column;
         }
+    }
 
-        &__btn {
+    .menu__btn {
             width: 32px;
             height: 32px;
             position: relative;
             z-index: 5;
             left: 87%;
-            top: 30px;
+            top: -33px;
             span {
                 width: 25px;
                 height: 2px;
@@ -365,15 +392,9 @@
                 padding: 5px;
                 border-radius: 8px;
             }
-        }
-
-        
-
-        
     }
 
     .logo {
-        margin-top: 0px;
         position: relative;
         max-width: 50%;
         img {
@@ -400,7 +421,7 @@
         line-height: 37px;
     }
 
-    .menu {
+    .mobile-menu .menu {
         position: fixed;
         top: 0;
         left: 0;
@@ -411,10 +432,10 @@
         z-index: 55;
         display: flex;
         justify-content: center;
-        transform: translateY(-120%);
+        transform: translateY(-220%);
 	    transition: transform 0.5s;
         &.active {
-            transform: translateY(0);
+            transform: translateX(0);
         }
         &__list {
             position: absolute;
@@ -474,8 +495,7 @@
     // БЕЛЫЙ HEADER
 
     .white-header {
-        padding-top: 0;
-        padding-bottom: 30px;
+        padding: 0;
         & .header__inner {
             margin-top: 0;
         }
@@ -491,7 +511,7 @@
         }
 
         & .logo {
-            margin-top: 0;
+            margin-top: 40px;
         }
 
         & .logo {
@@ -517,6 +537,9 @@
 
     .info-service__list {
         flex-basis: 100%;
+        & + .info-service__list {
+            margin-top: 48px;
+        }
     }
     
     .service-page .logo-img {

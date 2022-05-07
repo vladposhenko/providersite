@@ -45,16 +45,7 @@
                                 </svg>
                              </a>
                         </div>
-                        <div class="menu__btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <nav class="menu">
-                            <svg class="close__menu" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
-                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
-                            </svg>
                             <ul class="menu__list">
                                 <li class="menu__item">
                                     <a class="menu__link" href="#">about us</a>
@@ -66,13 +57,43 @@
                                     <a class="menu__link" href="team.html">team</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link active-page" href="pages/publications.html">publications</a>
+                                    <a class="menu__link active-page" href="publications.html">publications</a>
                                 </li>
                                 <li class="menu__item" id="openModal">
                                     <a class="menu__link" href="#">contact</a>
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="mobile-menu">
+                        <nav class="menu mobile-nav">
+                            <svg class="close__menu" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                            </svg>
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">about us</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="pages/service.html">services</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="pages/team.html">team</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="pages/publications.html">publications</a>
+                                </li>
+                                <li class="menu__item" id="openModal">
+                                    <a class="menu__link" href="#" >contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,7 +102,7 @@
             <section class="publications public">
                 <div class="container">
                     <div class="public__buttons">
-                        <button class="public__btn public-active" >news</button>
+                        <button class="public__btn public-active" id="switchBtn">news</button>
                         <button class="public__btn public-inactive">articles</button>
                     </div>
                     <div class="publications__inner">
@@ -196,6 +217,7 @@
         <!-- <POPUP END>----------------------------------------------------------------------------------- -->
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/main.js"></script>

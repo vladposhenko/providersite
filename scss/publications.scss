@@ -150,6 +150,7 @@
     @extend %anim1;
     &:hover {
          background: #0085FF;
+         animation: effect 0.3s infinite;
     }
     &:active {
         background: #006CCF;
@@ -159,4 +160,30 @@
 
 .public-item {
     max-width: 100%;
+}
+
+@keyframes effect {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-4px) rotate(-4deg);
+    }
+
+    40% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(4deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
 }
