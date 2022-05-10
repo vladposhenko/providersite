@@ -13,7 +13,7 @@
   src: url(../fonts/Montserrat-Bold.ttf);
   font-weight: 700;
 }
-.publications__title, .idea__link, .top__title {
+.benefits__title, .publications__title, .idea__link, .top__title {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
@@ -1158,6 +1158,124 @@ a {
     transform: translateX(0px) rotate(0deg);
   }
 }
+.benefits__inner {
+  display: flex;
+}
+.benefits__info {
+  max-width: 662px;
+  padding-right: 30px;
+}
+.benefits__title {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.benefits__text {
+  margin-top: 28px;
+  font-size: 19px;
+  line-height: 30px;
+}
+.benefits__text + .benefits__text {
+  margin-top: 15px;
+}
+.benefits__exp {
+  padding-left: 30px;
+  position: relative;
+}
+.benefits__exp::after {
+  content: "";
+  position: absolute;
+  background: #E6E6F0;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 4px;
+}
+.benefits__item + .benefits__item {
+  margin-top: 40px;
+}
+.benefits__heading {
+  display: flex;
+}
+.benefits__num {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+.benefits__sub {
+  margin-top: 10px;
+  color: #323264;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.introduce {
+  margin-top: 60px;
+}
+.introduce img {
+  width: 100%;
+  max-height: 700px;
+}
+
+.bottom-title {
+  margin-left: 60px;
+}
+
+.bottom-inner {
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+.bottom-inner .benefits__text:first-child {
+  margin-top: 0;
+}
+
+.achievements {
+  background: #F5F5FA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.achievements__title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #323264;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+.achievements__inner {
+  padding-bottom: 60px;
+}
+.achievements__inner .swiper-pagination {
+  margin: 0 auto;
+  display: block;
+  bottom: -30px;
+}
+.achievements__inner .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+.achievements__inner .swiper-slide {
+  width: auto;
+}
+.achievements__items {
+  display: flex;
+}
+.achievements__item {
+  background: #ffffff;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
 @media (min-width: 1720px) {
   .container {
     max-width: 1600px;
@@ -1217,7 +1335,7 @@ a {
     margin-top: 20px;
   }
   .white-header .mobile-menu .menu__btn {
-    top: -50px;
+    top: -60px;
   }
 
   .white-header .menu {
@@ -1248,6 +1366,10 @@ a {
 
   .service-page .logo-img {
     width: 190px;
+  }
+
+  .achievements__item img {
+    width: 50%;
   }
 }
 @media (max-width: 918px) {
@@ -1362,6 +1484,26 @@ a {
 
   .menu {
     margin-top: 0;
+  }
+
+  .achievements__item img {
+    max-height: 80%;
+  }
+
+  .benefits__inner {
+    flex-direction: column;
+  }
+
+  .benefits__exp {
+    margin-top: 30px;
+  }
+  .benefits__exp::after {
+    height: 100%;
+  }
+
+  .bottom-title {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 @media (max-width: 704px) {

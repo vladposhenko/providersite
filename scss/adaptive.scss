@@ -80,7 +80,7 @@
         display: block;
         margin-top: 20px;
         & .menu__btn {
-            top: -50px;
+            top: -60px;
         }
     }
 
@@ -113,6 +113,10 @@
 
     .service-page .logo-img {
         width: 190px;
+    }
+
+    .achievements__item img {
+        width: 50%;
     }
 
 }
@@ -258,6 +262,28 @@
     .menu {
         margin-top: 0;
     }
+
+    .achievements__item img {
+        max-height: 80%;
+    }
+
+    .benefits__inner {
+        flex-direction: column;
+    }
+
+    .benefits__exp {
+        margin-top: 30px;
+        &::after {
+            height: 100%;
+        }
+    }
+
+    .bottom-title {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    
 
 
 }

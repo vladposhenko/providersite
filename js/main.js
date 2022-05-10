@@ -47,3 +47,36 @@ closeModal.addEventListener('click', function(){
 
 
 
+
+
+  const swiper = new Swiper('.achievements__inner', {
+    
+    slidesPerView: 4,
+    slidesPerGroup:4,
+    spaceBetween:40,
+    pagination : {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
+
+    breakpoints: {
+      220: {
+        slidesPerView: 1,
+        slidesPerGroup:1,
+      },
+
+      540: {
+        slidesPerGroup:2,
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      740: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+
+      
+    }
+
+  });
