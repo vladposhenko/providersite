@@ -102,63 +102,120 @@
             <section class="publications public">
                 <div class="container">
                     <div class="public__buttons">
-                        <button class="public__btn public-active" id="switchBtn">news</button>
-                        <button class="public__btn public-inactive">articles</button>
+                        <button class="public__btn" data-filter=".category-a">news</button>
+                        <button class="public__btn" data-filter=".category-b">articles</button>
                     </div>
-                    <div class="publications__inner">
-                        <a class="publications__item" href="#" data-aos="zoom-in">   
-                            <img class="publications__item-img" src="../images/publications/public1.jpg" alt="equity">
-                            <div class="publications__item-info">
-                                <h6 class="publications__item-title">Equity associate</h6>
-                                <p class="publications__item-date">April 22</p>
-                                <hr class="publications__item-line">
-                                <p class="publications__item-text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
-                            </div>
-                        </a>
-                        <a class="publications__item" href="#" data-aos="zoom-in">
-                            <img class="publications__item-img" src="../images/publications/public2.jpg" alt="equity">
-                            <div class="publications__item-info">
-                                <h6 class="publications__item-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h6>
-                                <p class="publications__item-date">September 29</p>
-                                <hr class="publications__item-line">
-                                <p class="publications__item-text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
-                            </div>
-                        </a>
-                        <a class="publications__item" href="#" data-aos="zoom-in">
-                            <img class="publications__item-img" src="../images/publications/public3.jpg" alt="equity">
-                            <div class="publications__item-info">
-                                <h6 class="publications__item-title">Millennial Testament</h6>
-                                <p class="publications__item-date">August 19</p>
-                                <hr class="publications__item-line">
-                                <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                            </div>
-                        </a>
-                        <a class="publications__item" href="#" data-aos="zoom-in">
-                            <img class="publications__item-img" src="../images/publications/public4.jpg" alt="equity">
-                            <div class="publications__item-info">
-                                <h6 class="publications__item-title">Millennial Testament</h6>
-                                <p class="publications__item-date">August 19</p>
-                                <hr class="publications__item-line">
-                                <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                            </div>
-                        </a>
-                        <a class="publications__item" href="#" data-aos="zoom-in">
-                            <img class="publications__item-img" src="../images/publications/public5.jpg" alt="equity">
-                            <div class="publications__item-info">
-                                <h6 class="publications__item-title">Millennial Testament</h6>
-                                <p class="publications__item-date">August 19</p>
-                                <hr class="publications__item-line">
-                                <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                            </div>
-                        </a>
-                        <a class="publications__item" href="#" data-aos="zoom-in">
-                            <div class="publications__item-info">
-                                <h6 class="publications__item-title">Millennial Testament</h6>
-                                <p class="publications__item-date">August 19</p>
-                                <hr class="publications__item-line">
-                                <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
-                            </div>
-                        </a>
+                    <div class="filter-container">
+                        <div class="publications__inner  mix category-a">
+                            <a class="publications__item" href="#" data-aos="zoom-in">   
+                                <img class="publications__item-img" src="../images/publications/public1.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Equity associate</h6>
+                                    <p class="publications__item-date">April 22</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#" data-aos="zoom-in">
+                                <img class="publications__item-img" src="../images/publications/public2.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h6>
+                                    <p class="publications__item-date">September 29</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#" data-aos="zoom-in">
+                                <img class="publications__item-img" src="../images/publications/public3.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#" data-aos="zoom-in">
+                                <img class="publications__item-img" src="../images/publications/public4.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#" data-aos="zoom-in">
+                                <img class="publications__item-img" src="../images/publications/public5.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#" data-aos="zoom-in">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="publications__inner  mix category-b">
+                            <a class="publications__item" href="#">   
+                                <img class="publications__item-img" src="../images/publications/public1.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Equity associate</h6>
+                                    <p class="publications__item-date">April 22</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#">
+                                <img class="publications__item-img" src="../images/publications/public2.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h6>
+                                    <p class="publications__item-date">September 29</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#">
+                                <img class="publications__item-img" src="../images/publications/public3.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#">
+                                <img class="publications__item-img" src="../images/publications/public4.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#">
+                                <img class="publications__item-img" src="../images/publications/public5.jpg" alt="equity">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                            <a class="publications__item" href="#">
+                                <div class="publications__item-info">
+                                    <h6 class="publications__item-title">Millennial Testament</h6>
+                                    <p class="publications__item-date">August 19</p>
+                                    <hr class="publications__item-line">
+                                    <p class="publications__item-text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <button class="publications__btn">More publications</button>
                 </div>
@@ -217,9 +274,10 @@
         <!-- <POPUP END>----------------------------------------------------------------------------------- -->
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/mixitup.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

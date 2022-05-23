@@ -113,6 +113,11 @@
     font-size: 16px;
     line-height: 20px;
     padding: 8px 30px;
+    @extend %anim1;
+    &:hover {
+        background: #F5F5FA;
+        border-radius: 10px;
+    }
 }
 
 .public-active {
@@ -121,13 +126,7 @@
     border-radius: 10px;
 }
 
-.public-inactive {
-    @extend %anim1;
-    &:hover {
-        background: #F5F5FA;
-        border-radius: 10px;
-    }
-}
+
 
 
 
@@ -161,6 +160,13 @@
 .public-item {
     max-width: 100%;
 }
+
+
+.mixitup-control-active {
+    background: $white;
+    border-radius: 8px;
+}
+
 
 @keyframes effect {
     0% {

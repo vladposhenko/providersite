@@ -24,7 +24,7 @@
   justify-content: space-between;
 }
 
-.info-service__btn, .team__link svg path, .team__link svg, .team__link, .team__item-name, .publications__btn, .public-inactive, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__phone, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-phone, .header__info-place, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
+.info-service__btn, .team__link svg path, .team__link svg, .team__link, .team__item-name, .publications__btn, .public__btn, .public .publications__item, .public .publications__item-title, .popup__btn, .popup__close, .popup__content, .popup, .publications__item, .publications__item-title, .partners__item, .swiper-pagination .swiper-pagination-bullet, .service__item-title, .idea__link, .idea__item, .top__anchor svg path, .top__anchor, .footer__social path, .footer__mail, .footer__phone, .footer__map, .menu__link, .logo, .header__info-social svg path, .header__info-phone, .header__info-place, .header__info-btn, .section__name svg path, .section__name svg, .section__name span {
   transition: all ease 0.5s;
 }
 
@@ -914,14 +914,13 @@ a {
   line-height: 20px;
   padding: 8px 30px;
 }
-
-.public-active {
-  background-color: #fff;
+.public__btn:hover {
+  background: #F5F5FA;
   border-radius: 10px;
 }
 
-.public-inactive:hover {
-  background: #F5F5FA;
+.public-active {
+  background-color: #fff;
   border-radius: 10px;
 }
 
@@ -951,6 +950,11 @@ a {
 
 .public-item {
   max-width: 100%;
+}
+
+.mixitup-control-active {
+  background: #ffffff;
+  border-radius: 8px;
 }
 
 @keyframes effect {

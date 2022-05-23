@@ -80,3 +80,20 @@ closeModal.addEventListener('click', function(){
     }
 
   });
+
+
+var mixer = mixitup('.filter-container', {
+  load: {
+		filter: '.category-a'
+	},
+
+  animation: {
+    effects: 'fade translateX(100%)',
+    reverseOut: true,
+    nudge: false 
+}
+
+
+});
+
+
